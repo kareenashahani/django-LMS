@@ -1,0 +1,59 @@
+.login_form_width{
+    display: block;
+    width: 40%;
+    margin: 0 auto;    
+}
+
+.my_btn_color{
+    background-color: #e10982;
+    border: 1px solid #e10982;
+    border-radius: 15px;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.my_brdr_color{
+    box-shadow: 0px 0px 5px 2px #666566;
+    padding: 10px;
+}
+
+a{
+    color: #e10982 !important;
+}
+
+input[type=checkbox]:checked {
+  background-color: #a77e2d !important;
+  color: #ffffff !important;
+}
+input[type='checkbox']:after {
+    box-shadow: none !important;
+}
+
+.required {
+             color: red;
+         }
+.my_nav_bg{
+    background-color:#e10982 !important;
+    padding: 0 !important;
+}
+
+.navbar a{
+    color: #fff !important;
+}
+
+.navbar-nav li, .navbar-brand{
+    padding: 0 10px;
+}
+
+.navbar-nav li.active{
+background: #b9086b;
+}
+
+
+@media (max-width: 768px) { 
+    .login_form_width{
+    width: 100%;  
+}
+ }
+

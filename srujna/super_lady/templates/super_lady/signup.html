@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Srujna</title>
+      <link rel="stylesheet" type="text/css" href="{%static 'super_lady/css/styles.css'%}">
+      <link rel="stylesheet" type="text/css" href="{%static 'super_lady/css/bootstrap.min.css'%}">
+      <script type="text/javascript" src="{%static 'super_lady/js/bootstrap.min.js'%}"></script>      
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="{%static 'super_lady/js/jquery.js'%}"></script>
+   </head>
+   <body>
+      <nav class="navbar fixed-top navbar-expand-lg my_nav_bg navbar-dark">
+         <div class="container-fluid">
+            <a href='' class="navbar-brand">Srujna</a>
+            <button class="navbar-toggler mobilemeny" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+               aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <div class="navbar-nav ms-auto" style="margin-left: auto!important;">
+                  <ul class="navbar-nav">
+                    <!-- <li><a href="index.html" class="nav-item nav-link">Login</a></li>-->
+                     <!-- <li class="active"><a href="signup.html" class="nav-item nav-link">Sign Up</a></li> -->
+                     <li><a href="#" class="nav-item nav-link">News</a></li>
+                     <li><a href="#" class="nav-item nav-link">About</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="container pt-5">
+         <div class="align-items-center justify-content-center">
+            <h2 class="text-center pt-2 pb-1" style="line-height: 50px;font-weight: 700;">WELCOME TO</h2>
+            <img src="{%static 'super_lady/upload/srujna_logo.png'%}" class="text-center d-block" style="margin: 0px auto 20px auto;">
+            <section class="vh-100 gradient-custom">
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration my_brdr_color">
+          <div class="card-body">
+            <form action="assign_roles" method="POST">
+              {% csrf_token %}
+               <h4 class="mb-3 pb-md-0 text-center">Registration</h4>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                     <label class="form-label" for="Name">Name</label>
+                     <input type="text" name="Name" id="Name" class="form-control" placeholder="Name" />
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="userid">User Id</label>
+                    <input type="text" name="userid" id="userid" class="form-control" placeholder="User Id" />
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                     <label class="form-label" for="region">Region</label>
+                    <input type="text" name="region" id="region" class="form-control" placeholder="Region" />
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+                 <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2">Choose Role <span class="required">*</span></label>
+                  <select name="role" class="select form-control">
+                     <option value="1" disabled>Choose option</option>
+                     <option value="2">Super Lady</option>
+                     <option value="3">User</option>
+                  </select>
+               </div>
+            </div>
+              </div>
+
+               
+               <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                     <label class="form-label" for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                     <label class="form-label" for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password" />
+                  </div>
+
+                </div>
+              </div>
+         
+              <div class="mt-4 pt-2">
+               <button type="submit" class="my_btn_color btn-block mb-4">Sign up</button>
+                <!-- <input class="my_btn_color btn-lg" type="submit" value="Submit" /> -->
+              
+              <div class="text-center">
+                <!--  <p>I already have an <a href="index.html">account?</a></p>-->
+               </div>
+</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      </div>
+   </body>
+</html>
